@@ -1,8 +1,12 @@
 **Badminton Match Scheduler**
+
+
 A simple Android application that helps organize badminton matches by dividing players into teams based on ability levels, available courts, and total playtime. 
 The app generates fair rotations ensuring that all players get to play with different partners across the matches.
 
 **Features**
+
+
 Input number of players, total playing of hours, number of courts
 
 Specify ability level for each player (1 to 5)
@@ -18,6 +22,8 @@ Handles device rotation and activity lifecycle properly
 Developed entirely in Java (no external libraries)
 
 **How It Works**
+
+
 Input Screen:
 
 Enter total number of players
@@ -51,6 +57,8 @@ Scroll or navigate through rounds
 Start Match to view timer
 
 **How to Run in Android Studio**
+
+
 Clone the Repository
 
 bash
@@ -86,19 +94,48 @@ Grant storage permissions if prompted
 Start scheduling your badminton matches!
 
 **Project Structure**
+
+
 swift
+
+
 Copy
+
+
 Edit
+
+
 /app/src/main/java/com/example/badmintonapp/
+
+
 ├── MainActivity.java          // Input UI & logic
+
+
 ├── MatchScheduler.java        // Algorithm for generating match schedules
+
+
 ├── Match.java                 // Generating team matches
+
+
 └── Player.java                // Player info including ability
+
+
 └── Team.java                  // Team info including combined ability
+
+
 └── TimerActivity.java         // Match timer logic
-└── TItle.java                 // Title page logic and UI
+
+
+└── Title.java                 // Title page logic and UI
+
 
 /res/layout/
+
+
 ├── activity_main.xml          // Input screen layout
+
+
 └── activity_timer.xml         // Timer display layout
+
+
 └── activity_title.xml         // Title display layout
