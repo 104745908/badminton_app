@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ability level options for the Spinner -->
+    <string-array name="ability_levels">
+        <item>1 - Beginner</item>
+        <item>2 - Novice</item>
+        <item>3 - Intermediate</item>
+        <item>4 - Advanced</item>
+        <item>5 - Expert</item>
+    </string-array>
+</resources>

@@ -1,0 +1,105 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/img_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextNumPlayers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of players"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of hours"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumCourts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of courts"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonGeneratePlayerInputs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Player Inputs" />
+
+        <LinearLayout
+            android:id="@+id/playerInputsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp" />
+
+        <!-- Button to generate match schedule -->
+        <Button
+            android:id="@+id/generateScheduleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Match Schedule"
+            android:layout_marginTop="16dp" />
+
+        <!-- TableLayout for match schedule -->
+        <TableLayout
+            android:id="@+id/matchTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="0, 1, 2"
+            android:background="@color/white"
+            android:padding="8dp">
+
+            <TableRow
+                android:background="@color/light_gray"
+                android:padding="8dp">
+                <TextView
+                    android:text="Court"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="Team 1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="vs"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="Team 2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="Duration"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
